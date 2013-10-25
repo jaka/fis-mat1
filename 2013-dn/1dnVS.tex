@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{color}
+\usepackage{fancybox}
+\usepackage[slovene]{babel}
+\usepackage{amssymb}
+\usepackage[margin=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{calc}
+
+\newcounter{naloga}
+\newenvironment{naloga}[0]{
+\hspace*{\fill}\begin{minipage}{\textwidth-2cm}\begin{flushleft}\stepcounter{naloga}\llap{\makebox[3cm][r]{\ovalbox{\arabic{naloga}. \textsc{naloga}}}\hspace{1em}}\vspace{-3ex}}{\end{flushleft}\end{minipage}\vspace{1cm}}
+
+\title{\bf Matematične metode 1 \\ 1. domača naloga \hspace{2mm}\textsc{\ovalbox{VS}}}
+\author{\emph{Fakulteta za informacijske študije v Novem mestu}}
+\date{11.\,10.\,2013}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\bigskip
+\begin{naloga}
+Dane so množice \(A = \{x\,;\, x \in \mathbb{Z} \land (-1 \leq x) \land (x < 6)\}\), \(B = \{x \,;\, x \in \mathbb{N} \, \land \, x | 15\}\) in 
+\(C = \{x \,;\, x \in \mathbb{N} \, \land \, x^2 - 9 = 0\}\). 
+\begin{enumerate}
+\item Zapišite vse elemente množic \(A, B\) in \(C\).
+\item Zapišite vse elemente množic \(A \cup B\), \(B \cap C\), \(A \setminus B\), \(B \setminus C\) in \(C \setminus A\).
+\end{enumerate}
+\underline{\textsc{opomba:}} Navpična črta, v definiciji množice \(B\), pomeni relacijo \emph{naravnoštevilske deljivosti} oziroma velja:
+\begin{center}
+\(a|b\) („\(a\) deli \(b\)“) natanko tedaj, ko velja \(b=k \cdot a\) za neko naravno število \(k\).
+\end{center}
+\underline{\textsc{opomba:}} Študentje, ki poslušajo predmet v okviru diferencialnega izpita, naj vzamejo množico \(B = \{3x\,;\, x \in \{1,2,3\}\}\).
+
+\underline{\textsc{namig:}} Pri določanju elementov množice C najprej rešite kvadratno enačbo, nato pa preverite ali dobljene rešitve ustrezajo še preostalemu pogoju.
+\end{naloga}
+
+\begin{naloga} Pri pogoju (oziroma omejitvi) \(x > 0\) poiščite vse rešitve izraza
+\[\frac{x + \sqrt{13+\sqrt{9}}}{3x + 2} = \frac{x+2}{x^2+2x}.\]
+
+\end{naloga}
+\vfill
+
+\noindent \textbf{Rok za pravočasno oddajo} 1. domače naloge je \textcolor{red}{\textbf{nedelja, 13.\,10.\,2013, ob 23:55}}. \\
+
+\noindent Rešitev (kot datoteko v formatu \texttt{doc}, \texttt{docx} ali \texttt{pdf}) poimenujte kot \textcolor{blue}{\textbf{PriimekImeVS}} ter jo oddajte preko spletne učilnice.
+
+\begin{itemize}
+\item Pravočasno oddana domača naloga prinese \textcolor{red}{največ \textbf{4} točke}.
+\item Naknadno oddana domača naloga prinese natanko \textcolor{red}{\textbf{0} točk}.
+\item Prva prepisana domača naloga pomeni \textcolor{red}{\textbf{-8} točk}.
+\end{itemize}
+\hfill asist. Jaka Kranjc
+
+\end{document}

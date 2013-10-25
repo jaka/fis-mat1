@@ -1,0 +1,74 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amssymb,amsmath}
+\usepackage[margin=3cm]{geometry}
+
+\usepackage{calc}
+\usepackage{dsfont}
+\usepackage{lmodern}
+\usepackage{color}
+\usepackage{fancybox}
+
+\usepackage[pdftex,unicode=true,colorlinks=true,
+pdfproducer={LaTeX},pdfcreator={pdflatex}]{hyperref}
+
+% številka domače naloge
+\newcommand{\assignment}{3}
+\newcommand{\releasedate}{25.\,10.\,2013}
+\newcommand{\deadline}{nedelja, 27.\,10.\,2013, ob 23:55}
+
+\AtBeginDocument{\hypersetup{
+pdfauthor = {Jaka Kranjc, Fakulteta za informacijske študije v Novem mestu},
+pdfkeywords={domača naloga},
+pdfproducer={Jaka Kranjc},
+pdfsubject={\assignment. domača naloga},
+pdftitle = {Matematične metode 1: \assignment. domača naloga}
+}}
+
+\newcounter{naloga}
+\newenvironment{naloga}[0]{
+\hspace*{\fill}\begin{minipage}{\textwidth-2cm}\begin{flushleft}\stepcounter{naloga}\llap{\makebox[3cm][r]{\ovalbox{\arabic{naloga}. \textsc{naloga}}}\hspace{1em}}\vspace{-3ex}}{\end{flushleft}\end{minipage}\vspace{1cm}}
+
+\title{\bf Matematične metode 1\\\assignment. domača naloga\hspace{2mm}\textsc{\ovalbox{VS}}}
+\author{\emph{Fakulteta za informacijske študije v Novem mestu}}
+\date{\releasedate}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\bigskip
+\begin{naloga}
+Izračunajte limite zaporedij:
+\begin{enumerate}
+\item \(\displaystyle\lim_{n\to\infty} \left(\frac{2}{3} + \frac{3}{2n^2}\right)\)
+\item \(\displaystyle\lim_{n\to\infty} \frac{5n^3+6n-3}{7n-3n^3+2}\)
+\item \(\displaystyle\lim_{n\to\infty} n\sqrt{n^2+4}-n^2\)
+\end{enumerate}
+\end{naloga}
+
+\begin{naloga}
+Določite natančno spodnjo mejo in natančno zgornjo mejo zaporedja
+\[a_n = \frac{2n + 3}{n}\]
+ter ju utemeljite.
+\end{naloga}
+
+\vfill
+
+\noindent \textbf{Rok za pravočasno oddajo} \assignment. domače naloge je \textcolor{red}{\textbf{\deadline}}. \\
+
+\noindent Rešitev (kot datoteko v formatu \texttt{doc}, \texttt{docx} ali \texttt{pdf}) poimenujte kot \textcolor{blue}{\textbf{PriimekImeVS}}, kjer morebitne šumnike nadomestite z ustreznimi sičniki, ter jo oddajte preko spletne učilnice.
+
+\begin{itemize}
+\item Pravočasno oddana domača naloga prinese \textcolor{red}{največ \textbf{4} točke}.
+\item Naknadno oddana domača naloga prinese natanko \textcolor{red}{\textbf{0} točk}.
+\item Prva prepisana domača naloga pomeni \textcolor{red}{\textbf{-8} točk}.
+\end{itemize}
+\hfill asist. Jaka Kranjc
+
+\end{document}
