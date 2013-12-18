@@ -1,0 +1,100 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amssymb,amsmath}
+\usepackage[margin=3cm]{geometry}
+
+\usepackage{calc}
+\usepackage{dsfont}
+\usepackage{lmodern}
+\usepackage{color}
+\usepackage{fancybox}
+\usepackage{tasks}
+
+\settasks{
+  counter-format = (tsk[1]),
+  label-width = 2em
+}
+
+\usepackage[pdftex,unicode=true,colorlinks=true,
+pdfproducer={LaTeX},pdfcreator={pdflatex}]{hyperref}
+
+% številka domače naloge
+\newcommand{\assignment}{6}
+\newcommand{\releasedate}{22.\,11.\,2013}
+\newcommand{\deadline}{nedelja, 24.\,11.\,2013, ob 23:55}
+
+\AtBeginDocument{\hypersetup{
+pdfauthor = {Jaka Kranjc, Fakulteta za informacijske študije v Novem mestu},
+pdfkeywords={domača naloga},
+pdfproducer={Jaka Kranjc},
+pdfsubject={\assignment. domača naloga},
+pdftitle = {Matematične metode 1: \assignment. domača naloga}
+}}
+
+\newcounter{naloga}
+\newenvironment{naloga}[0]{
+\hspace*{\fill}\begin{minipage}{\textwidth-2cm}\begin{flushleft}\stepcounter{naloga}\llap{\makebox[3cm][r]{\ovalbox{\arabic{naloga}. \textsc{naloga}}}\hspace{1em}}\vspace{-3ex}}{\end{flushleft}\end{minipage}\vspace{0.5cm}}
+
+\title{\bf Matematične metode 1\\\assignment. domača naloga\hspace{2mm}\textsc{\ovalbox{VS}}}
+\author{\emph{Fakulteta za informacijske študije v Novem mestu}}
+\date{\releasedate}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent
+Pred začetkom reševanja nalog morate določiti števili \(\mathbf{\textcolor{magenta}b}\) in \(\mathbf{c}\), ki ju uporabite v naslednjih dveh nalogah, po postopku:
+Naj bosta \(\mathsf{\textcolor{red}X}\) in \(\mathsf{\textcolor{blue}Y}\) predzadnja oziroma zadnja števka vaše vpisne številke. Torej, če je vaša vpisna številka enaka 282001\textcolor{red}6\textcolor{blue}7, potem vzemite
+\[\mathsf{\textcolor{red}X} = \textcolor{red}6 \quad \mbox{in} \quad \mathsf{\textcolor{blue}Y} = \textcolor{blue}7.\]
+Izračunajte
+\[\mathbf{\textcolor{magenta}b} = 10 - \mathsf{\textcolor{red}X} - \mathsf{\textcolor{blue}Y} \qquad \mbox{in} \qquad \mathbf{c} = 24 + (\mathsf{\textcolor{red}X}\cdot\mathsf{\textcolor{blue}Y}) - (4\cdot\mathsf{\textcolor{red}X}) - (6\cdot\mathsf{\textcolor{blue}Y}),\]
+kjer pika (\(\cdot\)) zaznamuje klasično množenje števil. V primeru vpisne številke 282001\textcolor{red}6\textcolor{blue}7 dobimo
+\(\mathbf{\textcolor{magenta}b} = 10 - \textcolor{red}6 - \textcolor{blue}7 = -3\) in 
+\(\mathbf{c} = 24 + \textcolor{red}6 \cdot\textcolor{blue}7 - 4\cdot\textcolor{red}6 - 6\cdot\textcolor{blue}7 = 24 + 42 - 24 - 42 = 0\).
+
+\vspace{0.8cm}
+
+\begin{naloga}
+Dana je funkcija \[f(x) = x^2 + \mathbf{\textcolor{magenta}b}x + \mathbf{c},\]
+pri čemer ste števili \(\mathbf{\textcolor{magenta}b}\) in \(\mathbf{c}\) določili v predhodnem koraku.
+
+\begin{enumerate}
+\item
+Izračunajte ničle, lokalne maksimume, lokalne minimume, prevoje ter \underline{prostoročno} narišite graf funkcije.
+\item
+Zapišite zalogo vrednosti \(Z_f\) funkcije \(f\).
+\item
+Določite enačbo tangente na graf funkcije \(f\) v točki \((0,\mathbf{c})\).
+\end{enumerate}
+\end{naloga}
+
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{naloga}
+Izračunajte odvode funkcij (tudi tokrat računajte z \(\mathbf{\textcolor{magenta}b}\) in \(\mathbf{c}\)):
+\begin{enumerate}
+\item
+\(f(x) = x^3-5x^2+4x - e^{x^{\mathbf{\textcolor{magenta}b}}}\)
+\item
+\(g(x) = \ln(x + \sqrt{1+ x^\mathbf{c}})\)
+\end{enumerate}
+\end{naloga}
+
+\vfill
+
+\noindent \textbf{Rok za pravočasno oddajo} \assignment. domače naloge je \textcolor{red}{\textbf{\deadline}}. \\
+
+\noindent Rešitev (kot datoteko v formatu \texttt{doc}, \texttt{docx} ali \texttt{pdf}) poimenujte kot \textcolor{blue}{\textbf{PriimekImeVS}}, kjer morebitne šumnike nadomestite z ustreznimi sičniki, ter jo oddajte preko spletne učilnice.
+
+\begin{itemize}
+\item Pravočasno oddana domača naloga prinese \textcolor{red}{največ \textbf{4} točke}.
+\item Naknadno oddana domača naloga prinese natanko \textcolor{red}{\textbf{0} točk}.
+\item Prva prepisana domača naloga pomeni \textcolor{red}{\textbf{-8} točk}.
+\end{itemize}
+\hfill asist. Jaka Kranjc
+
+\end{document}
